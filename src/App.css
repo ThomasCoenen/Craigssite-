@@ -164,7 +164,7 @@ grid-template-rows: auto auto;
   /* justify-items: center; */
   text-align: center;
   width: 85%;
-  font-size: 16px;
+  font-size: 13px;
   justify-items: center;
   align-items: center;
   grid-gap: 0px;
@@ -282,6 +282,7 @@ button:hover {
 
 .description {
   font-size: 0.8rem;
+  margin: -17px 0px 0px 0px;
 }
 
 .donate {
