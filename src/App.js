@@ -50,7 +50,7 @@ function App() {
           <h2>These are some of my projects</h2>
         </div> */}
 
-        <div id="project-heading">
+        <div id="mainbuttons">
             {/* <ul>
                 <li><a className="home" href="index.html">Home</a></li>
                 <li><a className="home" href="index.html">Home</a></li>
@@ -64,33 +64,36 @@ function App() {
                   
           <div className="product">
               <img className="image_prod" src={productImg} alt="product"/>
-              <h1 className="item">BRONZE LEVEL PARTNER FRAMED PRINT
-                  <p className="description">Features: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, ipsum alias. Temporibus fugiat beatae voluptates esse, ab cumque? Iure enim animi vel molestias quia consectetur porro dicta totam cupiditate temporibus.</p>
-                  <button className="donate">CLICK TO DONATE</button>
-              </h1>
+              <div className="itemstuff">
+                <h1 className="itemname">BRONZE LEVEL PARTNER FRAMED PRINT</h1>
+                <p className="description">Features: Lorem<br/> consectetur adipisicing<br/> elit. Non, <br/>ipsum alias. <br/> voluptates esse, <br/> Iure enim animi <br/>vel molestiar porro <br/>dicta totam cupiditate<br/> temporibus.</p>
+                <button className="donate">CLICK TO DONATE</button>
+              </div>
           </div>
           <br/>
 
           <div className="product">
               <img className="image_prod" src={productImg} alt="product"/>
-              <h1 className="item">BRONZE LEVEL PARTNER FRAMED PRINT
-                  <p className="description">Features: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, ipsum alias. Temporibus fugiat beatae voluptates esse, ab cumque? Iure enim animi vel molestias quia consectetur porro dicta totam cupiditate temporibus.</p>
-                  <button className="donate">CLICK TO DONATE</button>
-              </h1>
+              <div className="itemstuff">
+                <h1 className="itemname">BRONZE LEVEL PARTNER FRAMED PRINT</h1>
+                <p className="description">Features: Lorem<br/> consectetur adipisicing<br/> elit. Non, <br/>ipsum alias. <br/> voluptates esse, <br/> Iure enim animi <br/>vel molestiar porro <br/>dicta totam cupiditate<br/> temporibus.</p>
+                <button className="donate">CLICK TO DONATE</button>
+              </div>
           </div>
           <br/>
 
           <div className="product">
               <img className="image_prod" src={productImg} alt="product"/>
-              <h1 className="item">BRONZE LEVEL PARTNER FRAMED PRINT
-                  <p className="description">Features: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, ipsum alias. Temporibus fugiat beatae voluptates esse, ab cumque? Iure enim animi vel molestias quia consectetur porro dicta totam cupiditate temporibus.</p>
-                  <button className="donate">CLICK TO DONATE</button>
-              </h1>
+              <div className="itemstuff">
+                <h1 className="itemname">BRONZE LEVEL PARTNER FRAMED PRINT</h1>
+                <p className="description">Features: Lorem<br/> consectetur adipisicing<br/> elit. Non, <br/>ipsum alias. <br/> voluptates esse, <br/> Iure enim animi <br/>vel molestiar porro <br/>dicta totam cupiditate<br/> temporibus.</p>
+                <button className="donate">CLICK TO DONATE</button>
+              </div>
           </div>
           <br/>
 
         </div>
-        
+
       </section>
 
 
