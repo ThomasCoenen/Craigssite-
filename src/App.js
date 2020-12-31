@@ -125,6 +125,10 @@ export default App;
 
 
 
+// git add .
+//git commit -m "fixxxxxed"
+//npm run deploy
+//git push -u origin master
 
 
 
