@@ -8,144 +8,112 @@ import productImg from './images/productimg1.png';
 
 function App() {
   return (
+
 	<div class="container">
 
-        <header class="header" id="myHeader">
+    <header class="header" id="myHeader">
 
-            <ul class="list">
-                {/* <li>FCC: Survey Form</li>  */}
-                {/* <li><img className="cureimg" src="/images/curebutton.png" alt=""></img></li> */}
-                <li><img className="cureimg" src={curebuttonImg} alt=""></img></li>
+      <ul class="list">
+          {/* <li>FCC: Survey Form</li>  */}
+          {/* <li><img className="cureimg" src="/images/curebutton.png" alt=""></img></li> */}
+          <li><img className="cureimg" src={curebuttonImg} alt=""></img></li>
 
-            </ul>
+      </ul>
 
-            <ul class="buttons">
+      <ul class="buttons">
 
+          <li><a className="home" href="index.html">Home</a></li>
+          <li><a className="home" href="index.html">About</a></li>
+          <li><a className="home" href="index.html">Gallery</a></li>
+          <li><a className="home" href="index.html">Contact</a></li>
+
+
+          {/* <button>Heart</button>
+          <button>Sign Up</button>
+          <button>Log In</button>
+          <button>Log In</button>
+          <button>Log In</button>  */}
+      </ul>
+    </header>
+
+
+    <div class="content">
+
+      <section id="welcome">
+        <h2>HELP US HEAL AND CURE MORE CHILDREN EVERY DAY!</h2>
+        <p>HIGH QULAITY DUAL PANEL FRAMED ART COMMENMORATIVES</p>
+      </section>
+
+      <section id="projects">
+
+        {/* <div id="project-heading">
+          <h2>These are some of my projects</h2>
+        </div> */}
+
+        <div id="project-heading">
+            {/* <ul>
                 <li><a className="home" href="index.html">Home</a></li>
-                <li><a className="home" href="index.html">About</a></li>
-                <li><a className="home" href="index.html">Gallery</a></li>
-                <li><a className="home" href="index.html">Contact</a></li>
+                <li><a className="home" href="index.html">Home</a></li>
+            </ul> */}
+            <button className="artbuttons" href="">FRAMED CANVAS OPTIONS</button>
+            <button className="artbuttons" href="">FRAMED PRINT OPTIONS</button>
+        </div>
 
 
-                {/* <button>Heart</button>
-                <button>Sign Up</button>
-                <button>Log In</button>
-                <button>Log In</button>
-                <button>Log In</button>  */}
-            </ul>
-        </header>
+        <div class="project-grid">
+                  
+          <div className="product">
+              <img className="image_prod" src={productImg} alt="product"/>
+              <h1 className="item">BRONZE LEVEL PARTNER FRAMED PRINT
+                  <p className="description">Features: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, ipsum alias. Temporibus fugiat beatae voluptates esse, ab cumque? Iure enim animi vel molestias quia consectetur porro dicta totam cupiditate temporibus.</p>
+                  <button className="donate">CLICK TO DONATE</button>
+              </h1>
+          </div>
+          <br/>
 
+          <div className="product">
+              <img className="image_prod" src={productImg} alt="product"/>
+              <h1 className="item">BRONZE LEVEL PARTNER FRAMED PRINT
+                  <p className="description">Features: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, ipsum alias. Temporibus fugiat beatae voluptates esse, ab cumque? Iure enim animi vel molestias quia consectetur porro dicta totam cupiditate temporibus.</p>
+                  <button className="donate">CLICK TO DONATE</button>
+              </h1>
+          </div>
+          <br/>
 
-    	<div class="content">
+          <div className="product">
+              <img className="image_prod" src={productImg} alt="product"/>
+              <h1 className="item">BRONZE LEVEL PARTNER FRAMED PRINT
+                  <p className="description">Features: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, ipsum alias. Temporibus fugiat beatae voluptates esse, ab cumque? Iure enim animi vel molestias quia consectetur porro dicta totam cupiditate temporibus.</p>
+                  <button className="donate">CLICK TO DONATE</button>
+              </h1>
+          </div>
+          <br/>
 
-			<section id="welcome">
-				<h2>HELP US HEAL AND CURE MORE CHILDREN EVERY DAY!</h2>
-				<p>HIGH QULAITY DUAL PANEL FRAMED ART COMMENMORATIVES</p>
-			</section>
-
-			<section id="projects">
-
-				{/* <div id="project-heading">
-					<h2>These are some of my projects</h2>
-				</div> */}
-
-                <div id="project-heading">
-                    {/* <ul>
-                        <li><a className="home" href="index.html">Home</a></li>
-                        <li><a className="home" href="index.html">Home</a></li>
-                    </ul> */}
-                    <button className="artbuttons" href="">FRAMED CANVAS OPTIONS</button>
-                    <button className="artbuttons" href="">FRAMED PRINT OPTIONS</button>
-				</div>
-
-
-                
-
-				<div class="project-grid">
-                    
-
-                    <div className="product">
-                        <img className="image_prod" src={productImg} alt="product"/>
-                        <h1 className="item">BRONZE LEVEL PARTNER FRAMED PRINT
-                            <p className="description">Features: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, ipsum alias. Temporibus fugiat beatae voluptates esse, ab cumque? Iure enim animi vel molestias quia consectetur porro dicta totam cupiditate temporibus.</p>
-                            <button className="donate">CLICK TO DONATE</button>
-                        </h1>
-                    </div>
-                    <br/>
-
-                    <div className="product">
-                        <img className="image_prod" src={productImg} alt="product"/>
-                        <h1 className="item">BRONZE LEVEL PARTNER FRAMED PRINT
-                            <p className="description">Features: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, ipsum alias. Temporibus fugiat beatae voluptates esse, ab cumque? Iure enim animi vel molestias quia consectetur porro dicta totam cupiditate temporibus.</p>
-                            <button className="donate">CLICK TO DONATE</button>
-                        </h1>
-                    </div>
-                    <br/>
-
-                    <div className="product">
-                        <img className="image_prod" src={productImg} alt="product"/>
-                        <h1 className="item">BRONZE LEVEL PARTNER FRAMED PRINT
-                            <p className="description">Features: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, ipsum alias. Temporibus fugiat beatae voluptates esse, ab cumque? Iure enim animi vel molestias quia consectetur porro dicta totam cupiditate temporibus.</p>
-                            <button className="donate">CLICK TO DONATE</button>
-                        </h1>
-                    </div>
-                    <br/>
-
-
-					{/* <a class="specific-project" href="">
-						<img src="https://www.mathworks.com/help/examples/graphics/win64/CompareTypesOfBarGraphsExample_01.png" height="300" width="300"/>
-						<p>Tribute Page</p>
-					</a>
-
-					<a class="specific-project" href="">
-						<img src="https://www.mathworks.com/help/examples/graphics/win64/CompareTypesOfBarGraphsExample_01.png" height="300" width="300"/>
-						<p>Tribute Page</p>
-					</a>
-
-					<a class="specific-project" href="">
-						<img src="https://www.mathworks.com/help/examples/graphics/win64/CompareTypesOfBarGraphsExample_01.png" height="300" width="300"/>
-						<p>Tribute Page</p>
-					</a>
-
-					<a class="specific-project" href="">
-						<img src="https://www.mathworks.com/help/examples/graphics/win64/CompareTypesOfBarGraphsExample_01.png" height="300" width="300"/>
-						<p>Tribute Page</p>
-					</a>
-
-					<a href="" class="btn btn-show-all" target="_blank">
-					
-					Show all</a> */}
-
-
-				</div>
-			</section>
+        </div>
+        
+      </section>
 
 
 
 
 
 
-			<section id="contact">
-				{/* <div id="convo">
-					<h1>Let's work together</h1>
-					<h5>How do you take your coffee?</h5>
-				</div> */}
+      <section id="contact">
+        <ul id="connect-links">
+          <li><a href="afd">GitHub</a>
+          </li>
 
-				<ul id="connect-links">
-					<li><a href="afd">GitHub</a>
-					</li>
+          <li><a href="asdf">LinkedIn</a></li>
+          <li><a href="afs.com">Email Me</a></li>
+        </ul>
 
-					<li><a href="asdf">LinkedIn</a></li>
-					<li><a href="afs.com">Email Me</a></li>
-				</ul>
+      </section>
 
-			</section>
+      <footer>
+        <h3>Website Design by Craigpaulstudio.com and...</h3>
+      </footer>
 
-			<footer>
-				<h3>Website Design by Craigpaulstudio.com and...</h3>
-			</footer>
-
-    	</div>
+    </div>
 	</div>
   );
 }
