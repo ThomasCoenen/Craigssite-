@@ -40,7 +40,7 @@ function App() {
     <div class="content">
 
       <section id="welcome">
-        <h2>HELP US HEAL AND CURE MORE CHILDREN EVERY DAY!</h2>
+        <h3>HELP US HEAL AND CURE MORE CHILDREN EVERY DAY!</h3>
         <p>HIGH QULAITY DUAL PANEL FRAMED ART COMMENMORATIVES</p>
       </section>
 
