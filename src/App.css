@@ -40,7 +40,7 @@ body {
 
 
 
-height: 110vh;
+height: 100vh;
 width: 100vw;
 
 
@@ -85,7 +85,7 @@ grid-template-rows: auto auto;
 .cureimg {
   height: 60px;
   max-width: 18rem;
-  min-width: 7rem;
+  min-width: 80px;
   width: 70%;
   display: grid;
   /* justify-self: start; */
@@ -218,9 +218,9 @@ button:hover {
   /* width: 200px; */
   height: 3.5rem;
   /* width: 80%; */
-  font-size: 1rem;
+  font-size: 15px;
   padding: 0px 0px 0px 0px;
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
 
@@ -239,14 +239,14 @@ button:hover {
   grid-template-columns: auto auto;
   grid-gap: 30px;
   padding: 0px 0px 0px 10px;
-  margin: 0px 0px 0px 0px;
+  margin: 15px 0px 0px 0px;
 
 }
 
 .product{
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 20px;
+  grid-gap: 16px;
   width: 100%;
 
 }
@@ -271,7 +271,7 @@ button:hover {
 
   /* align-content: center; */
   padding: 0px 0px 0px 0px;
-  margin: 0px 90px 0px 0px;
+  margin: -15px 90px 0px 0px;
   width: 75%;
   /* font-size: 1rem; */
 }
@@ -326,7 +326,7 @@ button:hover {
   justify-items: center;
   /*grid-gap: 170px;*/
   list-style: none;
-  width: 100%;
+  width: 88%;
   /*margin: 0px 0px 0px 0px;
   padding: 20px 0px 0px 0px;*/
 }
