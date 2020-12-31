@@ -11,10 +11,11 @@ body {
   -o-background-size: cover;
   background-size: cover; 
   background-repeat: no-repeat; 
+  width: 100%;
   /* Resize the background image to cover the entire container
   background-repeat: no-repeat; 
 
-  width: 100%;
+  /* width: 100%; */
   /* font-family: Helvetica Arial, sans-serif; */
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
@@ -83,7 +84,7 @@ grid-template-rows: auto auto;
   height: 60px;
   max-width: 18rem;
   min-width: 7rem;
-  width: 80%;
+  width: 70%;
   display: grid;
   /* justify-self: start; */
   /* align-self: start; */
@@ -97,6 +98,7 @@ grid-template-rows: auto auto;
   /*align-self: end;*/
   padding: 5px 0px 0px 40px;
   margin: 0px 0px 0px 0px;
+  /* width: 100%; */
 }
 
 .buttons {
@@ -107,8 +109,8 @@ grid-template-rows: auto auto;
   /* justify-items: end; */
   justify-self: end;
   padding: 10px 30px 0px 2px;
-  margin: 0px 0px 0px 0px;
-  /* width: 100%; */
+  margin: 0px 0px 0px 10px;
+  /* width: 10%; */
 
 }
 
@@ -119,14 +121,14 @@ grid-template-rows: auto auto;
   text-decoration: none;
   /* justify-self: end; */
   margin: 15px 18px 0px 0px;
-  font-size: 16px;
+  font-size: 15px;
   /* width: 100%; */
 
 }
 
 .home {
   text-decoration: none;
-  padding: 0px 12px 0px 0px;
+  padding: 0px 10px 0px 0px;
   margin: 0px 0px 0px 2px;
 }
 
