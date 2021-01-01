@@ -1,18 +1,24 @@
+html,body {padding:0; margin:0;}
+
 
 body {
+  display: grid;
+  /* overflow: hidden; */
+
   margin: auto 0;
   /* display: grid; */
-  /* overflow: hidden; */
-  display: grid;
-
   background: url(images/backgroundimg.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; 
-  background-repeat: no-repeat; 
-  width: 100%;
-  height: 100%; 
+  background-repeat: no-repeat;  
+  /* width: 100%;
+  height: 100%;  */
+  height: 100vh;
+  width: 100vw;
+
+
   /* Resize the background image to cover the entire container
   background-repeat: no-repeat; 
 
@@ -30,18 +36,31 @@ body {
 /*grid container will take up all the viewport*/
 .container {    
 
+
+
+  /* margin: auto 0;
+  display: grid;
+  background: url(images/backgroundimg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  background-repeat: no-repeat;  */
+
   /* background-repeat: no-repeat;  */
   /* font-size: 62.5%;  */
   /* box-sizing: border-box; */
   /* width: 100%;
   height: 100%; */
-  height: 100%; 
+  /* height: 100%;  */
 
 
 
 
-height: 100vh;
-width: 100vw;
+/* height: 100vh;
+width: 100vw; */
+/*width: 100%;*/
+/* height: 100%;  */
 
 
 display: grid;
@@ -53,6 +72,11 @@ grid-template-rows: auto auto;
   /*font-size: 20px;*/
   /*width: 100%;*/
   /* justify-self: center; */
+
+  /* height: 100vh;
+  width: 100vw; */
+  width: 100%;
+  height: 100%; 
 }
 
 /*new stuff*/
