@@ -3,121 +3,100 @@ import './App.css';
 import React from 'react';
 import curebuttonImg from './images/curebutton.png';
 import productImg from './images/productimg1.png';
-// import curebuttonImg from './images/curebutton.png';
+import { BrowserRouter, Link, Route, Switch} from 'react-router-dom';
+import data from './data.js'
+import FramedPrint from './FramedPrint';
+import AboutPage from './AboutPage';
+import Homescreen from './Homescreen';
+import FramedCanvas from './FramedCanvas';
+import GalleryScreen from './GalleryScreen';
+import ContactScreen from './ContactScreen';
 
 
 function App() {
   return (
+  <BrowserRouter>
+    <div class="container">
 
-	<div class="container">
+      <header class="header" id="myHeader">
 
-    <header class="header" id="myHeader">
+        <ul class="list">
+            {/* <li><img className="cureimg" src="/images/curebutton.png" alt=""></img></li> */}
+            <li><img className="cureimg" src={curebuttonImg} alt=""></img></li>
 
-      <ul class="list">
-          {/* <li>FCC: Survey Form</li>  */}
-          {/* <li><img className="cureimg" src="/images/curebutton.png" alt=""></img></li> */}
-          <li><img className="cureimg" src={curebuttonImg} alt=""></img></li>
-
-      </ul>
-
-      <ul class="buttons">
-
-          <li><a className="home" href="index.html">Home</a></li>
-          <li><a className="home" href="index.html">About</a></li>
-          <li><a className="home" href="index.html">Gallery</a></li>
-          <li><a className="home" href="index.html">Contact</a></li>
-
-
-          {/* <button>Heart</button>
-          <button>Sign Up</button>
-          <button>Log In</button>
-          <button>Log In</button>
-          <button>Log In</button>  */}
-      </ul>
-    </header>
-
-
-    <div class="content">
-
-      <section id="welcome">
-        <h3>HELP US HEAL AND CURE MORE CHILDREN EVERY DAY!</h3>
-        <p>HIGH QULAITY DUAL PANEL FRAMED ART COMMENMORATIVES</p>
-      </section>
-
-      <section id="projects">
-
-        {/* <div id="project-heading">
-          <h2>These are some of my projects</h2>
-        </div> */}
-
-        <div id="mainbuttons">
-            {/* <ul>
-                <li><a className="home" href="index.html">Home</a></li>
-                <li><a className="home" href="index.html">Home</a></li>
-            </ul> */}
-            <button className="artbuttons" href="">FRAMED CANVAS OPTIONS</button>
-            <button className="artbuttons" href="">FRAMED PRINT OPTIONS</button>
-        </div>
-
-
-        <div class="project-grid">
-                  
-          <div className="product">
-              <img className="image_prod" src={productImg} alt="product"/>
-              <div className="itemstuff">
-                <h1 className="itemname">BRONZE LEVEL PARTNER FRAMED PRINT</h1>
-                <p className="description">Features: Lorem<br/> consectetur adipisicing<br/> elit. Non, <br/>ipsum alias. <br/> voluptates esse, <br/> Iure enim animi <br/>vel molestiar porro <br/>dicta totam cupiditate<br/> temporibus.</p>
-                <button className="donate">CLICK TO DONATE</button>
-              </div>
-          </div>
-          <br/>
-
-          <div className="product">
-              <img className="image_prod" src={productImg} alt="product"/>
-              <div className="itemstuff">
-                <h1 className="itemname">BRONZE LEVEL PARTNER FRAMED PRINT</h1>
-                <p className="description">Features: Lorem<br/> consectetur adipisicing<br/> elit. Non, <br/>ipsum alias. <br/> voluptates esse, <br/> Iure enim animi <br/>vel molestiar porro <br/>dicta totam cupiditate<br/> temporibus.</p>
-                <button className="donate">CLICK TO DONATE</button>
-              </div>
-          </div>
-          <br/>
-
-          <div className="product">
-              <img className="image_prod" src={productImg} alt="product"/>
-              <div className="itemstuff">
-                <h1 className="itemname">BRONZE LEVEL PARTNER FRAMED PRINT</h1>
-                <p className="description">Features: Lorem<br/> consectetur adipisicing<br/> elit. Non, <br/>ipsum alias. <br/> voluptates esse, <br/> Iure enim animi <br/>vel molestiar porro <br/>dicta totam cupiditate<br/> temporibus.</p>
-                <button className="donate">CLICK TO DONATE</button>
-              </div>
-          </div>
-          <br/>
-
-        </div>
-
-      </section>
-
-
-
-
-
-
-      <section id="contact">
-        <ul id="connect-links">
-          <li><a href="afd">GitHub</a>
-          </li>
-
-          <li><a href="asdf">LinkedIn</a></li>
-          <li><a href="afs.com">Email Me</a></li>
         </ul>
 
-      </section>
+        <ul class="buttons">
+            <li><Link className="home" to="/">Home</Link></li>
+            <li><Link className="home"  to="/about">About</Link></li>
+            <li><Link className="home"  to="/gallery">Gallery</Link></li>
+            <li><Link className="home"  to="/contact">Contact</Link></li>
+            {/* <Link className="brand" to="/about">amazona</Link> */}
 
-      <footer>
-        <h3>Website Design by Craigpaulstudio.com and...</h3>
-      </footer>
+            {/* <li><a className="home" href="/">Home</a></li> */}
+            {/* <li><a className="home" href="index.html">About</a></li> */}
+            {/* <li><a className="home" href="index.html">Gallery</a></li> */}
+            {/* <li><a className="home" href="index.html">Contact</a></li> */}
+        </ul>
+      </header>
+
+{/* 
+        <main>
+          <Route
+            path="/about"
+            component={AboutPage}>
+          </Route>
+
+          <Route
+            path="/framedprint"
+            component={framedPrint}>
+          </Route>
+
+          <Route
+            path="/"
+            component={Homescreen}>
+          </Route>
+        </main> */}
+
+        <Switch>
+          <Route path="/about">
+            <AboutPage />
+          </Route>
+          <Route path="/framedprint">
+            <FramedPrint />
+          </Route>
+          <Route path="/framedcanvas">
+            <Homescreen />
+          </Route>
+          <Route path="/gallery">
+            <GalleryScreen />
+          </Route>
+          <Route path="/contact">
+            <ContactScreen />
+          </Route>
+          <Route path="/">
+            <Homescreen />
+          </Route>
+        </Switch>
+
+        <section id="contact">
+          <ul id="connect-links">
+            <li><a href="afd">GitHub</a>
+            </li>
+
+            <li><a href="asdf">LinkedIn</a></li>
+            <li><a href="afs.com">Email Me</a></li>
+          </ul>
+
+        </section>
+
+        <footer>
+          <h3>Website Design by Craigpaulstudio.com and...</h3>
+        </footer>
 
     </div>
-	</div>
+
+  </BrowserRouter>
   );
 }
 

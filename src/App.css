@@ -2,7 +2,7 @@
 body {
   margin: auto 0;
   /* display: grid; */
-  overflow: hidden;
+  /* overflow: hidden; */
   display: grid;
 
   background: url(images/backgroundimg.png) no-repeat center center fixed;
@@ -140,9 +140,12 @@ grid-template-rows: auto auto;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto;
+/*hide any overflow to ensure that nothing leaks outside of the .content element that would disturb the parent’s layout.*/
+   
+  /* overflow: hidden; 
+   overflow-y: scroll; */
 
-   overflow: hidden; /*hide any overflow to ensure that nothing leaks outside of the .content element that would disturb the parent’s layout.*/
-   overflow-y: scroll;
+
    /* background-color: Lightgrey; */
   font-size: 25px;
    /*margin: 0px;*/
