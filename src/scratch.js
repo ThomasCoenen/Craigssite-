@@ -573,3 +573,21 @@ footer {
 </div>
 
 </section>
+
+
+@media only screen and (max-width: 400px)
+{
+    /* body { display:none; }
+    body { display:block; color: white;} */
+
+    body
+    {
+      background: url(images/backgroundimg.png) no-repeat center center;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      height: 100vh;
+      width: 100vw;
+    }       
+}

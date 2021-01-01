@@ -26,7 +26,7 @@ function App() {
 
         </ul>
 
-        <ul class="buttons">
+        <ul class="links">
             <li><Link className="home" to="/">Home</Link></li>
             <li><Link className="home"  to="/about">About</Link></li>
             <li><Link className="home"  to="/gallery">Gallery</Link></li>

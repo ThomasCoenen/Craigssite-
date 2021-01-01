@@ -17,8 +17,8 @@ export default function Homescreen() {
     <div class="content">
 
         <section id="welcome">
-          <h3>HELP US HEAL AND CURE MORE CHILDREN EVERY DAY!</h3>
-          <p>HIGH QULAITY DUAL PANEL FRAMED ART COMMENMORATIVES</p>
+          <h3 className="saying">HELP US HEAL AND CURE MORE CHILDREN EVERY DAY!</h3>
+          <p className="saying">HIGH QULAITY DUAL PANEL FRAMED ART COMMENMORATIVES</p>
         </section>
 
         <section id="projects">
@@ -84,37 +84,6 @@ export default function Homescreen() {
           </div>
 
         </section>
-
-        {/* <Switch>
-          <Route path="/about">
-            <AboutPage />
-          </Route>
-          <Route path="/framedprint">
-            <framedPrint />
-          </Route>
-          <Route path="/framedcanvas">
-            <Homescreen />
-          </Route>
-          <Route path="/">
-            <Homescreen />
-          </Route>
-        </Switch> */}
-
-
-        {/* <section id="contact">
-          <ul id="connect-links">
-            <li><a href="afd">GitHub</a>
-            </li>
-
-            <li><a href="asdf">LinkedIn</a></li>
-            <li><a href="afs.com">Email Me</a></li>
-          </ul>
-
-        </section>
-
-        <footer>
-          <h3>Website Design by Craigpaulstudio.com and...</h3>
-        </footer> */}
 
     </div>
     )
