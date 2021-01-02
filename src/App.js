@@ -27,10 +27,10 @@ function App() {
         </ul>
 
         <ul class="links">
-            <li><Link className="home" to="/">Home</Link></li>
-            <li><Link className="home"  to="/about">About</Link></li>
-            <li><Link className="home"  to="/gallery">Gallery</Link></li>
-            <li><Link className="home"  to="/contact">Contact</Link></li>
+            <li className="try"><Link className="home" to="/">Home</Link></li>
+            <li className="try"><Link className="home"  to="/about">About</Link></li>
+            <li className="try"><Link className="home"  to="/gallery">Gallery</Link></li>
+            <li className="try"><Link className="home"  to="/contact">Contact</Link></li>
             {/* <Link className="brand" to="/about">amazona</Link> */}
 
             {/* <li><a className="home" href="/">Home</a></li> */}
@@ -81,17 +81,17 @@ function App() {
 
         <section id="contact">
           <ul id="connect-links">
-            <li><a href="afd">GitHub</a>
+            <li><a className="connect" href="afd">GitHub</a>
             </li>
 
-            <li><a href="asdf">LinkedIn</a></li>
-            <li><a href="afs.com">Email Me</a></li>
+            <li><a className="connect"  href="asdf">LinkedIn</a></li>
+            <li><a className="connect"  href="afs.com">Email Me</a></li>
           </ul>
 
         </section>
 
         <footer>
-          <h3>Website Design by Craigpaulstudio.com and...</h3>
+          <h3>Website Design by Craigpaulstudio.com</h3>
         </footer>
 
     </div>
